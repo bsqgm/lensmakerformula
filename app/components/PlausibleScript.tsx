@@ -13,6 +13,9 @@ export default function PlausibleScript({
 }: PlausibleScriptProps) {
   // 如果没有配置域名，不加载脚本
   if (!domain) {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[Plausible] Domain not configured. Set NEXT_PUBLIC_PLAUSIBLE_DOMAIN environment variable.');
+    }
     return null;
   }
 
@@ -23,14 +26,28 @@ export default function PlausibleScript({
     ? `https://${apiHost}/js/script.js`
     : 'https://plausible.io/js/script.js';
 
+  if (process.env.NODE_ENV === 'development') {
+    console.log('[Plausible] Loading script:', {
+      domain,
+      apiHost: apiHost || 'plausible.io (official)',
+      scriptSrc,
+    });
+  }
+
   return (
-    <>
-      <Script
-        strategy="afterInteractive"
-        data-domain={domain}
-        src={scriptSrc}
-      />
-    </>
+    <Script
+      strategy="afterInteractive"
+      data-domain={domain}
+      src={scriptSrc}
+      onLoad={() => {
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[Plausible] Script loaded successfully');
+        }
+      }}
+      onError={(e) => {
+        console.error('[Plausible] Script failed to load:', e);
+      }}
+    />
   );
 }
 

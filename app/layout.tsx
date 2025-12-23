@@ -26,12 +26,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // 在服务端组件中读取环境变量
+  const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
+  const plausibleApiHost = process.env.NEXT_PUBLIC_PLAUSIBLE_API_HOST;
+
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
         <PlausibleScript 
-          domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
-          apiHost={process.env.NEXT_PUBLIC_PLAUSIBLE_API_HOST}
+          domain={plausibleDomain}
+          apiHost={plausibleApiHost}
         />
         {children}
       </body>
