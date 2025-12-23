@@ -22,9 +22,10 @@ export default function PlausibleScript({
   // 构建 Plausible 脚本 URL
   // 如果提供了 apiHost（自建实例），使用自定义域名
   // 否则使用默认的 plausible.io
+  // 包含扩展功能：file-downloads, hash, outbound-links, pageview-props, revenue, tagged-events
   const scriptSrc = apiHost 
-    ? `https://${apiHost}/js/script.js`
-    : 'https://plausible.io/js/script.js';
+    ? `https://${apiHost}/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js`
+    : 'https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js';
 
   if (process.env.NODE_ENV === 'development') {
     console.log('[Plausible] Loading script:', {
