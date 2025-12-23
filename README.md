@@ -11,6 +11,7 @@ A beautiful, modern web application for calculating lens focal length using the 
 - 🎨 **Modern Design**: Dark theme with optical-inspired aesthetics
 - 📱 **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
 - ⚡ **Fast & Optimized**: Built with Next.js for optimal performance
+- 📈 **Analytics Ready**: Integrated with Plausible Analytics (supports self-hosted instances)
 
 ## Formula
 
@@ -53,6 +54,21 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Environment Variables
+
+Create a `.env.local` file for local development:
+
+```bash
+# Copy the example file
+cp env.example .env.local
+
+# Edit .env.local and add your Plausible configuration
+NEXT_PUBLIC_PLAUSIBLE_DOMAIN=your-domain.com
+NEXT_PUBLIC_PLAUSIBLE_API_HOST=analytics.yourdomain.com  # Optional, for self-hosted
+```
+
+See [PLAUSIBLE_SETUP.md](./PLAUSIBLE_SETUP.md) for detailed Plausible Analytics setup instructions.
+
 ## Deployment
 
 ### Deploy to Vercel
@@ -84,7 +100,8 @@ lensmakerformula/
 │   │   ├── LensCalculator.tsx    # Main calculator component
 │   │   ├── FormulaExplanation.tsx # Formula details
 │   │   ├── Visualization.tsx      # Light ray diagram
-│   │   └── FAQ.tsx                # FAQ section
+│   │   ├── FAQ.tsx                # FAQ section
+│   │   └── PlausibleScript.tsx    # Analytics script
 │   ├── globals.css               # Global styles
 │   ├── layout.tsx                # Root layout
 │   └── page.tsx                  # Home page

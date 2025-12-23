@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import PlausibleScript from './components/PlausibleScript'
 
 export const metadata: Metadata = {
   title: 'Lens Maker Formula Calculator - Free Online Optics Tool',
@@ -28,6 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
+        <PlausibleScript 
+          domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+          apiHost={process.env.NEXT_PUBLIC_PLAUSIBLE_API_HOST}
+        />
         {children}
       </body>
     </html>
