@@ -164,29 +164,99 @@ export default function Home() {
           <FormulaExplanation />
         </section>
 
+        {/* Learning Resources Section */}
+        <section className="px-4 py-12">
+          <div className="max-w-7xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-glow"
+            >
+              Learning Resources
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-optics-blue/70 text-center mb-12 max-w-2xl mx-auto"
+            >
+              Deepen your understanding of optics with our comprehensive educational materials
+            </motion.p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { href: '/tutorial', title: 'Tutorial', description: 'Step-by-step guide to the lens maker formula', icon: '📚' },
+                { href: '/examples', title: 'Examples', description: 'Common lens types with calculations', icon: '🔬' },
+                { href: '/glossary', title: 'Glossary', description: 'Definitions of optical terms', icon: '📖' },
+                { href: '/materials', title: 'Materials', description: 'Refractive index database', icon: '🔍' },
+              ].map((item, index) => (
+                <Link key={item.href} href={item.href}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="bg-glass-strong rounded-xl p-6 border border-optics-purple/30 
+                             hover:border-optics-purple/50 transition-all duration-300 
+                             cursor-pointer h-full"
+                  >
+                    <div className="text-center">
+                      <div className="text-4xl mb-4">{item.icon}</div>
+                      <h3 className="text-xl font-semibold text-optics-purple mb-2">{item.title}</h3>
+                      <p className="text-sm text-optics-blue/70">{item.description}</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="px-4 py-12">
           <FAQ />
         </section>
 
         {/* Footer */}
-        <footer className="relative z-10 border-t border-optics-blue/20 mt-20 py-8 px-4">
-          <div className="max-w-6xl mx-auto text-center text-optics-blue/60 text-sm">
-            <p>Lens Maker Formula Calculator - Free Online Optics Tool</p>
-            <p className="mt-2">Built for students, educators, and optical engineers</p>
-            <div className="mt-6 flex flex-wrap justify-center gap-4">
-              <Link href="/focal-length" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">
-                Focal Length
-              </Link>
-              <Link href="/refractive-index" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">
-                Refractive Index
-              </Link>
-              <Link href="/radius-r1" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">
-                Radius R₁
-              </Link>
-              <Link href="/radius-r2" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">
-                Radius R₂
-              </Link>
+        <footer className="relative z-10 border-t border-optics-blue/20 mt-20 py-12 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              {/* Calculators */}
+              <div>
+                <h3 className="text-lg font-semibold text-optics-cyan mb-4">Calculators</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/focal-length" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Focal Length</Link></li>
+                  <li><Link href="/refractive-index" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Refractive Index</Link></li>
+                  <li><Link href="/radius-r1" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Radius R₁</Link></li>
+                  <li><Link href="/radius-r2" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Radius R₂</Link></li>
+                </ul>
+              </div>
+              
+              {/* Learn */}
+              <div>
+                <h3 className="text-lg font-semibold text-optics-cyan mb-4">Learn</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/tutorial" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Tutorial</Link></li>
+                  <li><Link href="/examples" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Examples</Link></li>
+                  <li><Link href="/glossary" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Glossary</Link></li>
+                  <li><Link href="/materials" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Materials</Link></li>
+                </ul>
+              </div>
+              
+              {/* About */}
+              <div>
+                <h3 className="text-lg font-semibold text-optics-cyan mb-4">About</h3>
+                <p className="text-optics-blue/70 text-sm leading-relaxed">
+                  Free online lens maker formula calculator for optics students, educators, and optical engineers. 
+                  Calculate focal length, refractive index, and radii of curvature with precision.
+                </p>
+              </div>
+            </div>
+            
+            <div className="border-t border-optics-blue/20 pt-8 text-center text-optics-blue/60 text-sm">
+              <p>Lens Maker Formula Calculator - Free Online Optics Tool</p>
+              <p className="mt-2">Built for students, educators, and optical engineers</p>
             </div>
           </div>
         </footer>

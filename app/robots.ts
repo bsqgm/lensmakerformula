@@ -1,14 +1,16 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = 'https://lensmakerformula.vercel.app'
+  const siteUrl = 'https://lensmakerformula.vercel.app';
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/', '/_next/'],
+      },
+    ],
     sitemap: `${siteUrl}/sitemap.xml`,
-  }
+  };
 }
-
