@@ -164,6 +164,54 @@ export default function Home() {
           <FormulaExplanation />
         </section>
 
+        {/* Advanced Tools Section */}
+        <section className="px-4 py-12" id="tools">
+          <div className="max-w-7xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-display font-bold text-center mb-4 text-glow"
+            >
+              Advanced Tools
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-optics-blue/70 text-center mb-12 max-w-2xl mx-auto"
+            >
+              Explore advanced optical calculations for complex lens systems
+            </motion.p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                { href: '/thick-lens', title: 'Thick Lens', description: 'Calculate focal length with thickness correction', icon: '🔷' },
+                { href: '/lens-combination', title: 'Lens Combination', description: 'Combined focal length of multiple lenses', icon: '⚙️' },
+                { href: '/magnification', title: 'Magnification', description: 'Image distance and magnification calculation', icon: '🔎' },
+              ].map((item, index) => (
+                <Link key={item.href} href={item.href}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="bg-glass-strong rounded-xl p-6 border border-optics-amber/30 
+                             hover:border-optics-amber/50 transition-all duration-300 
+                             cursor-pointer h-full"
+                  >
+                    <div className="text-center">
+                      <div className="text-4xl mb-4">{item.icon}</div>
+                      <h3 className="text-xl font-semibold text-optics-amber mb-2">{item.title}</h3>
+                      <p className="text-sm text-optics-blue/70">{item.description}</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Learning Resources Section */}
         <section className="px-4 py-12">
           <div className="max-w-7xl mx-auto">
@@ -221,7 +269,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="relative z-10 border-t border-optics-blue/20 mt-20 py-12 px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               {/* Calculators */}
               <div>
                 <h3 className="text-lg font-semibold text-optics-cyan mb-4">Calculators</h3>
@@ -233,14 +281,24 @@ export default function Home() {
                 </ul>
               </div>
               
+              {/* Advanced */}
+              <div>
+                <h3 className="text-lg font-semibold text-optics-amber mb-4">Advanced</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/thick-lens" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Thick Lens</Link></li>
+                  <li><Link href="/lens-combination" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Lens Combination</Link></li>
+                  <li><Link href="/magnification" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Magnification</Link></li>
+                </ul>
+              </div>
+              
               {/* Learn */}
               <div>
-                <h3 className="text-lg font-semibold text-optics-cyan mb-4">Learn</h3>
+                <h3 className="text-lg font-semibold text-optics-purple mb-4">Learn</h3>
                 <ul className="space-y-2">
-                  <li><Link href="/tutorial" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Tutorial</Link></li>
-                  <li><Link href="/examples" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Examples</Link></li>
-                  <li><Link href="/glossary" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Glossary</Link></li>
-                  <li><Link href="/materials" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Materials</Link></li>
+                  <li><Link href="/tutorial" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Tutorial</Link></li>
+                  <li><Link href="/examples" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Examples</Link></li>
+                  <li><Link href="/glossary" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Glossary</Link></li>
+                  <li><Link href="/materials" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Materials</Link></li>
                 </ul>
               </div>
               
@@ -248,8 +306,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold text-optics-cyan mb-4">About</h3>
                 <p className="text-optics-blue/70 text-sm leading-relaxed">
-                  Free online lens maker formula calculator for optics students, educators, and optical engineers. 
-                  Calculate focal length, refractive index, and radii of curvature with precision.
+                  Free online lens maker formula calculator for optics students, educators, and optical engineers.
                 </p>
               </div>
             </div>

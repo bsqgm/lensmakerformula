@@ -23,6 +23,14 @@ const navItems: NavItem[] = [
     ],
   },
   {
+    label: 'Advanced',
+    children: [
+      { href: '/thick-lens', label: 'Thick Lens' },
+      { href: '/lens-combination', label: 'Lens Combination' },
+      { href: '/magnification', label: 'Magnification' },
+    ],
+  },
+  {
     label: 'Learn',
     children: [
       { href: '/tutorial', label: 'Tutorial' },
@@ -40,6 +48,9 @@ const allNavItems = [
   { href: '/refractive-index', label: 'Refractive Index' },
   { href: '/radius-r1', label: 'Radius R₁' },
   { href: '/radius-r2', label: 'Radius R₂' },
+  { href: '/thick-lens', label: 'Thick Lens' },
+  { href: '/lens-combination', label: 'Lens Combination' },
+  { href: '/magnification', label: 'Magnification' },
   { href: '/tutorial', label: 'Tutorial' },
   { href: '/examples', label: 'Examples' },
   { href: '/glossary', label: 'Glossary' },
