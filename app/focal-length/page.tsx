@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
-import UniversalCalculator from '../components/UniversalCalculator';
 import Navigation from '../components/Navigation';
+import FocalLengthContent from './FocalLengthContent';
 
 export const metadata: Metadata = {
-  title: 'Calculate Focal Length - Lens Maker Formula Calculator',
-  description: 'Calculate lens focal length using the lens maker formula. Enter refractive index (n), first surface radius (R₁), and second surface radius (R₂) to find the focal length.',
-  keywords: 'focal length calculator, lens focal length, calculate f, lens maker formula, optics calculator',
+  title: 'Focal Length Calculator - Free Online Lens Calculator',
+  description: 'Free focal length calculator to compute lens focal length instantly. Use our focal length calculator with the lens maker equation. Enter refractive index and radii to calculate focal length.',
+  keywords: 'focal length calculator, calculate focal length, lens focal length calculator, focal length calculation, optics calculator, lens calculator',
   openGraph: {
-    title: 'Calculate Focal Length - Lens Maker Formula',
-    description: 'Calculate lens focal length from refractive index and surface radii',
+    title: 'Focal Length Calculator - Free Online Tool',
+    description: 'Calculate lens focal length instantly with our free focal length calculator',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Calculate Focal Length - Lens Maker Formula',
-    description: 'Calculate lens focal length from refractive index and surface radii',
+    title: 'Focal Length Calculator',
+    description: 'Free online focal length calculator for lens calculations',
   },
 };
 
@@ -22,15 +22,7 @@ export default function FocalLengthPage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen relative z-10 pt-20 pb-16 px-4">
-        <UniversalCalculator
-          mode="f"
-          title="Calculate Focal Length"
-          description="Enter refractive index (n), R₁, and R₂ to calculate the focal length (f)"
-        />
-      </main>
+      <FocalLengthContent />
     </>
   );
 }
-
-
