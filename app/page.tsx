@@ -231,8 +231,9 @@ export default function Home() {
             >
               Deepen your understanding of optics with our comprehensive educational materials
             </motion.p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
               {[
+                { href: '/focal-length-formula', title: 'Focal Length Formula', description: 'Complete guide to focal length formulas', icon: '📐' },
                 { href: '/tutorial', title: 'Tutorial', description: 'Step-by-step guide to the lens maker formula', icon: '📚' },
                 { href: '/examples', title: 'Examples', description: 'Common lens types with calculations', icon: '🔬' },
                 { href: '/glossary', title: 'Glossary', description: 'Definitions of optical terms', icon: '📖' },
