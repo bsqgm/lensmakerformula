@@ -231,8 +231,9 @@ export default function Home() {
             >
               Deepen your understanding of optics with our comprehensive educational materials
             </motion.p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
               {[
+                { href: '/optics-lens-maker-formula', title: 'Optics Formula', description: 'Complete optics lens maker formula guide', icon: '🔭' },
                 { href: '/focal-length-formula', title: 'Focal Length Formula', description: 'Complete guide to focal length formulas', icon: '📐' },
                 { href: '/tutorial', title: 'Tutorial', description: 'Step-by-step guide to the lens maker formula', icon: '📚' },
                 { href: '/examples', title: 'Examples', description: 'Common lens types with calculations', icon: '🔬' },
@@ -296,6 +297,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold text-optics-purple mb-4">Learn</h3>
                 <ul className="space-y-2">
+                  <li><Link href="/optics-lens-maker-formula" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Optics Formula</Link></li>
                   <li><Link href="/tutorial" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Tutorial</Link></li>
                   <li><Link href="/examples" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Examples</Link></li>
                   <li><Link href="/glossary" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Glossary</Link></li>

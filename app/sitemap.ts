@@ -58,6 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Educational pages
     {
+      url: `${siteUrl}/optics-lens-maker-formula`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
       url: `${siteUrl}/focal-length-formula`,
       lastModified: currentDate,
       changeFrequency: 'monthly',

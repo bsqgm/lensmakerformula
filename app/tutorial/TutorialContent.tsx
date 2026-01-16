@@ -445,21 +445,27 @@ export default function TutorialContent() {
             Related Resources
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-4 gap-4">
+            <Link href="/optics-lens-maker-formula">
+              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full">
+                <h3 className="font-semibold text-optics-cyan mb-2">Optics Formula Guide</h3>
+                <p className="text-optics-blue/70 text-sm">Complete guide to the optics lens maker formula.</p>
+              </div>
+            </Link>
             <Link href="/examples">
-              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-blue/50 transition-all">
+              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-blue/50 transition-all h-full">
                 <h3 className="font-semibold text-optics-cyan mb-2">Lens Examples</h3>
                 <p className="text-optics-blue/70 text-sm">See common lens types and their properties.</p>
               </div>
             </Link>
             <Link href="/glossary">
-              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-blue/50 transition-all">
+              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-blue/50 transition-all h-full">
                 <h3 className="font-semibold text-optics-cyan mb-2">Glossary</h3>
                 <p className="text-optics-blue/70 text-sm">Definitions of key optics terms.</p>
               </div>
             </Link>
             <Link href="/materials">
-              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-blue/50 transition-all">
+              <div className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-blue/50 transition-all h-full">
                 <h3 className="font-semibold text-optics-cyan mb-2">Materials Database</h3>
                 <p className="text-optics-blue/70 text-sm">Refractive indices of common materials.</p>
               </div>

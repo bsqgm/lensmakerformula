@@ -33,6 +33,7 @@ const navItems: NavItem[] = [
   {
     label: 'Learn',
     children: [
+      { href: '/optics-lens-maker-formula', label: 'Optics Formula Guide' },
       { href: '/tutorial', label: 'Tutorial' },
       { href: '/examples', label: 'Examples' },
       { href: '/glossary', label: 'Glossary' },
@@ -51,6 +52,7 @@ const allNavItems = [
   { href: '/thick-lens', label: 'Thick Lens' },
   { href: '/lens-combination', label: 'Lens Combination' },
   { href: '/magnification', label: 'Magnification' },
+  { href: '/optics-lens-maker-formula', label: 'Optics Formula Guide' },
   { href: '/tutorial', label: 'Tutorial' },
   { href: '/examples', label: 'Examples' },
   { href: '/glossary', label: 'Glossary' },

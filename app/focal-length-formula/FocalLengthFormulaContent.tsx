@@ -471,7 +471,16 @@ export default function FocalLengthFormulaContent() {
             Related Calculators
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-4 gap-4">
+            <Link href="/optics-lens-maker-formula">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">Optics Formula Guide</h3>
+                <p className="text-optics-blue/70 text-sm">Complete guide to the optics lens maker formula.</p>
+              </motion.div>
+            </Link>
             <Link href="/focal-length">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
