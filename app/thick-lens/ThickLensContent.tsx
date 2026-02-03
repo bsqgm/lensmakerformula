@@ -346,12 +346,108 @@ export default function ThickLensContent() {
           </div>
         </motion.div>
 
-        {/* Info Section */}
+        {/* Thin vs Thick Lens Comparison */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mt-12 bg-glass-strong rounded-xl p-6 border border-optics-blue/30"
+        >
+          <h2 className="text-2xl font-display font-bold text-glow mb-6">
+            Thin Lens vs Thick Lens Formula
+          </h2>
+          <div className="space-y-6 text-optics-blue/80">
+            <p>
+              Understanding when to use the thin lens formula versus the thick lens formula is crucial 
+              for accurate optical calculations. Here&apos;s a detailed comparison:
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-optics-darker/50 rounded-lg p-5 border border-optics-cyan/30">
+                <h3 className="text-lg font-semibold text-optics-cyan mb-3">Thin Lens Formula</h3>
+                <p className="font-mono text-optics-cyan mb-3">1/f = (n-1)(1/R₁ - 1/R₂)</p>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>Assumption:</strong> Lens thickness is negligible (d ≈ 0)</li>
+                  <li><strong>Accuracy:</strong> Good for d &lt; 5% of radii</li>
+                  <li><strong>Use cases:</strong> Classroom problems, thin spectacle lenses, simple optical systems</li>
+                  <li><strong>Advantage:</strong> Simpler calculation</li>
+                </ul>
+              </div>
+              <div className="bg-optics-darker/50 rounded-lg p-5 border border-optics-amber/30">
+                <h3 className="text-lg font-semibold text-optics-amber mb-3">Thick Lens Formula</h3>
+                <p className="font-mono text-optics-amber mb-3">1/f = (n-1)[1/R₁ - 1/R₂ + (n-1)d/(nR₁R₂)]</p>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>Assumption:</strong> Lens thickness is significant</li>
+                  <li><strong>Accuracy:</strong> Required when d &gt; 5% of radii</li>
+                  <li><strong>Use cases:</strong> Camera lenses, microscope objectives, high-power lenses</li>
+                  <li><strong>Advantage:</strong> More accurate for real lenses</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-optics-purple/10 to-optics-blue/10 rounded-lg p-4 border border-optics-purple/30">
+              <h4 className="font-semibold text-optics-purple mb-2">Rule of Thumb</h4>
+              <p className="text-sm">
+                If the lens thickness is greater than 10% of either radius of curvature, use the thick lens formula. 
+                The correction term <span className="font-mono">(n-1)d/(nR₁R₂)</span> becomes significant and 
+                ignoring it can lead to errors of several percent in focal length calculations.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Thick Lens Formula Derivation */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-8 bg-glass-strong rounded-xl p-6 border border-optics-blue/30"
+        >
+          <h2 className="text-2xl font-display font-bold text-glow mb-6">
+            Thick Lens Formula Derivation
+          </h2>
+          <div className="space-y-4 text-optics-blue/80">
+            <p>
+              The thick lens formula is derived by treating the lens as two refracting surfaces separated 
+              by a distance d (the lens thickness). Here&apos;s the step-by-step derivation:
+            </p>
+            
+            <div className="bg-optics-darker/50 rounded-lg p-5 border border-optics-blue/20 space-y-3">
+              <div>
+                <p className="font-semibold text-optics-cyan mb-1">Step 1: First Surface Refraction</p>
+                <p className="font-mono text-sm">n₁/s₁ + n₂/s₁&apos; = (n₂ - n₁)/R₁</p>
+                <p className="text-xs text-optics-blue/60">Light refracts at the first surface from air (n₁=1) into the lens (n₂=n)</p>
+              </div>
+              <div>
+                <p className="font-semibold text-optics-cyan mb-1">Step 2: Second Surface Refraction</p>
+                <p className="font-mono text-sm">n₂/s₂ + n₁/s₂&apos; = (n₁ - n₂)/R₂</p>
+                <p className="text-xs text-optics-blue/60">Light refracts at the second surface from the lens (n₂=n) back into air (n₁=1)</p>
+              </div>
+              <div>
+                <p className="font-semibold text-optics-cyan mb-1">Step 3: Account for Thickness</p>
+                <p className="font-mono text-sm">s₂ = s₁&apos; - d</p>
+                <p className="text-xs text-optics-blue/60">The image from the first surface becomes the object for the second, shifted by thickness d</p>
+              </div>
+              <div>
+                <p className="font-semibold text-optics-amber mb-1">Step 4: Combine for Focal Length</p>
+                <p className="font-mono text-sm">1/f = (n-1)[1/R₁ - 1/R₂ + (n-1)d/(nR₁R₂)]</p>
+                <p className="text-xs text-optics-blue/60">The final thick lens formula with thickness correction term</p>
+              </div>
+            </div>
+
+            <p className="text-sm">
+              The additional term <span className="font-mono text-optics-amber">(n-1)d/(nR₁R₂)</span> is the 
+              thickness correction. When d approaches zero, this term vanishes and we recover the thin lens formula.
+            </p>
+          </div>
+        </motion.section>
+
+        {/* When to Use Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-8 bg-glass-strong rounded-xl p-6 border border-optics-blue/30"
         >
           <h2 className="text-2xl font-display font-bold text-glow mb-4">
             When to Use Thick Lens Formula
@@ -367,6 +463,87 @@ export default function ThickLensContent() {
               <li>Working with thick meniscus or high-power lenses</li>
               <li>Designing camera or microscope objectives</li>
             </ul>
+          </div>
+        </motion.section>
+
+        {/* Real-World Applications */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-8 bg-glass-strong rounded-xl p-6 border border-optics-blue/30"
+        >
+          <h2 className="text-2xl font-display font-bold text-glow mb-6">
+            Real-World Applications
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              {
+                icon: '📷',
+                title: 'Camera Lenses',
+                desc: 'Professional camera lenses use multiple thick lens elements. The thick lens formula ensures accurate focal length calculations for each element in the optical stack.'
+              },
+              {
+                icon: '🔬',
+                title: 'Microscope Objectives',
+                desc: 'High-magnification microscope objectives require precise thick lens calculations to achieve diffraction-limited performance and minimize aberrations.'
+              },
+              {
+                icon: '👓',
+                title: 'High-Prescription Eyeglasses',
+                desc: 'Strong corrective lenses (±6 diopters or more) have significant thickness, requiring thick lens formula for accurate prescription calculations.'
+              },
+              {
+                icon: '🔭',
+                title: 'Telescope Eyepieces',
+                desc: 'Wide-field eyepieces often use thick meniscus elements where the thickness correction significantly affects the optical performance.'
+              },
+            ].map((app) => (
+              <div key={app.title} className="bg-optics-darker/50 rounded-lg p-4 border border-optics-blue/20">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-2xl">{app.icon}</span>
+                  <h3 className="font-semibold text-optics-cyan">{app.title}</h3>
+                </div>
+                <p className="text-optics-blue/70 text-sm">{app.desc}</p>
+              </div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* FAQ Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-8 bg-glass-strong rounded-xl p-6 border border-optics-blue/30"
+        >
+          <h2 className="text-2xl font-display font-bold text-glow mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'What is the thick lens formula?',
+                a: 'The thick lens formula is 1/f = (n-1)[1/R₁ - 1/R₂ + (n-1)d/(nR₁R₂)], where d is the center thickness of the lens. This formula accounts for the separation between the two refracting surfaces that is ignored in the thin lens approximation.'
+              },
+              {
+                q: 'How much does thickness affect focal length?',
+                a: 'The effect depends on the lens geometry. For a typical biconvex lens with d = 10% of the radii, the focal length can differ by 1-3% from the thin lens calculation. For high-power lenses or thick meniscus designs, the difference can be 5-10% or more.'
+              },
+              {
+                q: 'What are principal planes in thick lens optics?',
+                a: 'Principal planes are hypothetical planes where all refraction can be considered to occur. For thick lenses, there are two principal planes (H and H\') that don\'t coincide. Distances for image calculations should be measured from these planes, not the lens surfaces.'
+              },
+              {
+                q: 'Can I use the thin lens formula for preliminary calculations?',
+                a: 'Yes, the thin lens formula is useful for initial estimates and understanding the basic behavior of an optical system. For final design verification and precision applications, always use the thick lens formula to account for real lens geometry.'
+              },
+            ].map((item, index) => (
+              <div key={index} className="bg-optics-darker/50 rounded-lg p-4 border border-optics-blue/20">
+                <h3 className="font-semibold text-optics-cyan mb-2">{item.q}</h3>
+                <p className="text-optics-blue/80 text-sm">{item.a}</p>
+              </div>
+            ))}
           </div>
         </motion.section>
 

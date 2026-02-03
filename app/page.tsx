@@ -44,6 +44,21 @@ export default function Home() {
     },
   ];
 
+  const lensTypeLinks = [
+    {
+      href: '/convex-lens-calculator',
+      title: 'Convex Lens Calculator',
+      description: 'Calculate focal length of converging lenses (biconvex, plano-convex)',
+      icon: '🔍',
+    },
+    {
+      href: '/concave-lens-calculator',
+      title: 'Concave Lens Calculator',
+      description: 'Calculate focal length of diverging lenses (biconcave, plano-concave)',
+      icon: '👓',
+    },
+  ];
+
   return (
     <>
       <Navigation />
@@ -109,6 +124,38 @@ export default function Home() {
                         <span className="text-2xl font-mono font-bold text-optics-cyan">{link.icon}</span>
                       </div>
                       <h3 className="text-xl font-semibold text-optics-blue mb-2">{link.title}</h3>
+                      <p className="text-sm text-optics-blue/70">{link.description}</p>
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+
+            {/* Lens Type Calculators */}
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-2xl font-display font-semibold text-center mt-12 mb-6 text-optics-blue/80"
+            >
+              Calculators by Lens Type
+            </motion.h3>
+            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              {lensTypeLinks.map((link, index) => (
+                <Link key={link.href} href={link.href}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="bg-glass-strong rounded-xl p-6 border border-optics-cyan/30 
+                             hover:border-optics-cyan/50 transition-all duration-300 
+                             cursor-pointer h-full"
+                  >
+                    <div className="text-center">
+                      <div className="text-4xl mb-3">{link.icon}</div>
+                      <h3 className="text-lg font-semibold text-optics-cyan mb-2">{link.title}</h3>
                       <p className="text-sm text-optics-blue/70">{link.description}</p>
                     </div>
                   </motion.div>
@@ -231,9 +278,11 @@ export default function Home() {
             >
               Deepen your understanding of optics with our comprehensive educational materials
             </motion.p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { href: '/optics-lens-maker-formula', title: 'Optics Formula', description: 'Complete optics lens maker formula guide', icon: '🔭' },
+                { href: '/how-to-calculate-focal-length', title: 'How to Calculate', description: 'Step-by-step focal length calculation guide', icon: '🎯' },
+                { href: '/lens-maker-formula-derivation', title: 'Formula Derivation', description: 'Mathematical proof of the lens maker formula', icon: '📝' },
                 { href: '/focal-length-formula', title: 'Focal Length Formula', description: 'Complete guide to focal length formulas', icon: '📐' },
                 { href: '/tutorial', title: 'Tutorial', description: 'Step-by-step guide to the lens maker formula', icon: '📚' },
                 { href: '/examples', title: 'Examples', description: 'Common lens types with calculations', icon: '🔬' },

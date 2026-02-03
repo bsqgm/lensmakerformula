@@ -37,6 +37,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    // Lens type calculators (NEW)
+    {
+      url: `${siteUrl}/convex-lens-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/concave-lens-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     // Advanced calculator pages
     {
       url: `${siteUrl}/thick-lens`,
@@ -68,6 +81,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.95,
+    },
+    {
+      url: `${siteUrl}/how-to-calculate-focal-length`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/lens-maker-formula-derivation`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
     },
     {
       url: `${siteUrl}/tutorial`,

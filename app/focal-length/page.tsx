@@ -3,24 +3,95 @@ import Navigation from '../components/Navigation';
 import FocalLengthContent from './FocalLengthContent';
 
 export const metadata: Metadata = {
-  title: 'Focal Length Calculator - Free Online Lens Calculator',
-  description: 'Free focal length calculator to compute lens focal length instantly. Use our focal length calculator with the lens maker equation. Enter refractive index and radii to calculate focal length.',
-  keywords: 'focal length calculator, calculate focal length, lens focal length calculator, focal length calculation, optics calculator, lens calculator',
+  title: 'Focal Length Calculator - Calculate Lens Focal Length [Free Tool]',
+  description: 'Free focal length calculator using the lens maker formula. Calculate focal length of convex and concave lenses instantly. Enter refractive index (n), R₁, and R₂ to find focal length in seconds.',
+  keywords: 'focal length calculator, calculate focal length, lens focal length calculator, focal length calculation, how to find focal length, focal length formula, lens calculator, optics calculator',
   openGraph: {
-    title: 'Focal Length Calculator - Free Online Tool',
-    description: 'Calculate lens focal length instantly with our free focal length calculator',
+    title: 'Focal Length Calculator - Calculate Lens Focal Length Free',
+    description: 'Calculate focal length instantly using the lens maker formula. Free online tool for students and engineers.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Focal Length Calculator',
-    description: 'Free online focal length calculator for lens calculations',
+    title: 'Focal Length Calculator - Free Tool',
+    description: 'Calculate focal length of any lens instantly with our free calculator',
   },
+  alternates: {
+    canonical: 'https://lensmakerformula.vercel.app/focal-length',
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebApplication',
+      name: 'Focal Length Calculator',
+      description: 'Calculate lens focal length using the lens maker formula. Free online tool for optics calculations.',
+      applicationCategory: 'EducationalApplication',
+      operatingSystem: 'Any',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+      },
+      featureList: [
+        'Calculate focal length from refractive index and radii',
+        'Support for convex and concave lenses',
+        'Real-time calculation results',
+        'Visual lens diagram',
+      ],
+    },
+    {
+      '@type': 'HowTo',
+      name: 'How to Calculate Focal Length of a Lens',
+      description: 'Step-by-step guide to calculate focal length using the lens maker formula.',
+      step: [
+        { '@type': 'HowToStep', position: 1, name: 'Enter refractive index', text: 'Input the refractive index (n) of your lens material. Common values: Crown glass (1.52), Flint glass (1.62), Plastic (1.49).' },
+        { '@type': 'HowToStep', position: 2, name: 'Enter R₁', text: 'Input the radius of curvature of the first lens surface in meters. Use positive for convex, negative for concave.' },
+        { '@type': 'HowToStep', position: 3, name: 'Enter R₂', text: 'Input the radius of curvature of the second lens surface in meters. Use the sign convention correctly.' },
+        { '@type': 'HowToStep', position: 4, name: 'Get result', text: 'The calculator applies the formula 1/f = (n-1)(1/R₁ - 1/R₂) and displays the focal length instantly.' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How do I calculate focal length of a lens?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Use the lens maker formula: 1/f = (n-1)(1/R₁ - 1/R₂). Enter the refractive index (n) and the radii of curvature (R₁ and R₂), then calculate 1/f and take the reciprocal to get the focal length f.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the focal length formula for a lens?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The focal length formula (lens maker equation) is 1/f = (n-1)(1/R₁ - 1/R₂), where f is focal length, n is refractive index, R₁ is the first surface radius, and R₂ is the second surface radius.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How to find focal length of a convex lens?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'For a biconvex lens, use positive R₁ and negative R₂ in the lens maker formula. For example, with R₁ = +10cm, R₂ = -10cm, and n = 1.5: 1/f = 0.5(0.1 + 0.1) = 0.1, so f = 10cm (positive = converging).',
+          },
+        },
+      ],
+    },
+  ],
 };
 
 export default function FocalLengthPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       <FocalLengthContent />
     </>
