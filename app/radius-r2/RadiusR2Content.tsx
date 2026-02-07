@@ -34,6 +34,9 @@ export default function RadiusR2Content() {
             from known focal length, refractive index, and first surface radius. The complete radius of 
             curvature calculator for optical engineers and lens designers.
           </p>
+          <a href="#calculator" className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+            Use Calculator Now ↓
+          </a>
         </motion.header>
 
         {/* Table of Contents */}

@@ -147,10 +147,14 @@ export default function ConvexLensContent() {
             Calculate the focal length of <strong className="text-optics-cyan">converging lenses</strong> including 
             biconvex and plano-convex types. Perfect for magnifying glasses, camera lenses, and optical design.
           </p>
+          <a href="#calculator" className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+            Use Calculator Now ↓
+          </a>
         </motion.header>
 
         {/* Calculator Card */}
         <motion.div
+          id="calculator"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}

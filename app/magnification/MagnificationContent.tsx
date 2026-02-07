@@ -165,6 +165,9 @@ export default function MagnificationContent() {
               >
                 Calculate image distance, magnification, and image characteristics
               </motion.p>
+              <a href="#calculator" className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+                Use Calculator Now ↓
+              </a>
             </div>
 
             {/* Formula Display */}
@@ -191,7 +194,7 @@ export default function MagnificationContent() {
             </motion.div>
 
             {/* Input Fields */}
-            <div className="space-y-6 mb-8">
+            <div id="calculator" className="space-y-6 mb-8">
               {/* Focal Length */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

@@ -91,6 +91,16 @@ export default function Home() {
             >
               Free online calculator for optics students, engineers, and enthusiasts
             </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+              className="mt-6"
+            >
+              <a href="#calculator" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+                Use Calculator Now ↓
+              </a>
+            </motion.div>
           </div>
         </section>
 
@@ -166,7 +176,7 @@ export default function Home() {
         </section>
 
         {/* Quick Calculator Section */}
-        <section className="px-4 py-12">
+        <section id="calculator" className="px-4 py-12">
           <div className="max-w-7xl mx-auto text-center mb-8">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
