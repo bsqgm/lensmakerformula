@@ -150,7 +150,7 @@ export default function ThickLensContent() {
               >
                 Calculate focal length with lens thickness correction
               </motion.p>
-              <a href="#calculator" className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+              <a href="#calculator" className="flex w-fit items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
                 Use Calculator Now ↓
               </a>
             </div>

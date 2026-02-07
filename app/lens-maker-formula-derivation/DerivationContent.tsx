@@ -29,7 +29,7 @@ export default function DerivationContent() {
             A complete mathematical derivation of the lens maker formula from first principles, 
             using Snell&apos;s Law and the refraction equation for spherical surfaces.
           </p>
-          <Link href="/focal-length#calculator" className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+          <Link href="/focal-length#calculator" className="flex w-fit items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
             Use Calculator Now →
           </Link>
         </motion.header>

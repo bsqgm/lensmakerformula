@@ -357,6 +357,7 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-optics-purple mb-4">Learn</h3>
                 <ul className="space-y-2">
                   <li><Link href="/optics-lens-maker-formula" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Optics Formula</Link></li>
+                  <li><Link href="/focal-length-formula" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Focal Length Formula</Link></li>
                   <li><Link href="/tutorial" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Tutorial</Link></li>
                   <li><Link href="/examples" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Examples</Link></li>
                   <li><Link href="/glossary" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Glossary</Link></li>

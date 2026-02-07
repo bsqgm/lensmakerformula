@@ -104,7 +104,7 @@ export default function ExamplesContent() {
             Explore different lens types with detailed calculations using the lens maker formula. 
             Each example includes real-world applications and typical parameter values.
           </p>
-          <Link href="/focal-length#calculator" className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
+          <Link href="/focal-length#calculator" className="flex w-fit items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
             Use Calculator Now →
           </Link>
         </motion.header>
