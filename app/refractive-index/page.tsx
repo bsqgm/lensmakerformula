@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     title: 'Refractive Index Calculator',
     description: 'Free online refractive index calculator for lens calculations',
   },
+  alternates: {
+    canonical: 'https://lensmakerformula.vercel.app/refractive-index',
+  },
 };
 
 export default function RefractiveIndexPage() {

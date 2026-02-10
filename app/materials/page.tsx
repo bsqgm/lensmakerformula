@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Refractive index reference for optical materials',
   },
   alternates: {
-    canonical: 'https://lensmakerformula.com/materials',
+    canonical: 'https://lensmakerformula.vercel.app/materials',
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Master the optics lens maker formula with interactive examples and free calculator',
   },
   alternates: {
-    canonical: 'https://lensmakerformula.com/optics-lens-maker-formula',
+    canonical: 'https://lensmakerformula.vercel.app/optics-lens-maker-formula',
   },
 };
 
@@ -33,7 +33,7 @@ const jsonLd = {
       publisher: { '@type': 'Organization', name: 'Lens Maker Formula Calculator' },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': 'https://lensmakerformula.com/optics-lens-maker-formula',
+        '@id': 'https://lensmakerformula.vercel.app/optics-lens-maker-formula',
       },
       articleSection: 'Optics Education',
       keywords: ['optics lens maker formula', 'optical lens design', 'focal length calculation', 'lens equation'],

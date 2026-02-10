@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Common lens types with interactive calculations',
   },
   alternates: {
-    canonical: 'https://lensmakerformula.com/examples',
+    canonical: 'https://lensmakerformula.vercel.app/examples',
   },
 };
 

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     title: 'Lens Maker Formula Calculator',
     description: 'Free online lens formula calculator for focal length calculations',
   },
+  alternates: {
+    canonical: 'https://lensmakerformula.vercel.app',
+  },
 }
 
 export const viewport: Viewport = {

@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     title: 'Radius of Curvature Calculator (R₁)',
     description: 'Free online radius of curvature calculator for lens design',
   },
+  alternates: {
+    canonical: 'https://lensmakerformula.vercel.app/radius-r1',
+  },
 };
 
 export default function RadiusR1Page() {

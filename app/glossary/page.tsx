@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Comprehensive definitions of lens and optical terms',
   },
   alternates: {
-    canonical: 'https://lensmakerformula.com/glossary',
+    canonical: 'https://lensmakerformula.vercel.app/glossary',
   },
 };
 

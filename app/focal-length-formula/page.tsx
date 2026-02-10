@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     title: 'Focal Length Formula - Complete Guide',
     description: 'Master the focal length formula with interactive tools, video tutorials, and examples',
   },
+  alternates: {
+    canonical: 'https://lensmakerformula.vercel.app/focal-length-formula',
+  },
 };
 
 const jsonLd = {
@@ -33,7 +36,7 @@ const jsonLd = {
       dateModified: new Date().toISOString().split('T')[0],
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': 'https://lensmakerformula.com/focal-length-formula',
+        '@id': 'https://lensmakerformula.vercel.app/focal-length-formula',
       },
     },
     {
@@ -96,7 +99,7 @@ const jsonLd = {
       name: 'Thin Lens Equation - Converging and Diverging Lens Ray Diagram & Sign Conventions',
       description: 'Comprehensive tutorial covering the thin lens equation for both converging and diverging lenses, with ray diagrams and sign conventions.',
       thumbnailUrl: 'https://img.youtube.com/vi/VKMswYSiyko/maxresdefault.jpg',
-      uploadDate: '2016-11-01',
+      uploadDate: '2016-11-01T00:00:00+00:00',
       contentUrl: 'https://www.youtube.com/watch?v=VKMswYSiyko',
       embedUrl: 'https://www.youtube.com/embed/VKMswYSiyko',
     },
@@ -105,7 +108,7 @@ const jsonLd = {
       name: "Physics - Optics: Lensmaker's Equation (1 of 5)",
       description: 'Step-by-step explanation of the lensmaker equation with a worked example showing how to find the focal length of a lens.',
       thumbnailUrl: 'https://img.youtube.com/vi/kGL1YnF_b64/maxresdefault.jpg',
-      uploadDate: '2013-06-01',
+      uploadDate: '2013-06-01T00:00:00+00:00',
       contentUrl: 'https://www.youtube.com/watch?v=kGL1YnF_b64',
       embedUrl: 'https://www.youtube.com/embed/kGL1YnF_b64',
     },

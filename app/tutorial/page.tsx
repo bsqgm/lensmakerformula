@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to understanding and applying the lens maker formula',
   },
   alternates: {
-    canonical: 'https://lensmakerformula.com/tutorial',
+    canonical: 'https://lensmakerformula.vercel.app/tutorial',
   },
 };
 
@@ -37,7 +37,7 @@ const jsonLd = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://lensmakerformula.com/tutorial',
+    '@id': 'https://lensmakerformula.vercel.app/tutorial',
   },
   articleSection: 'Optics Education',
   keywords: ['lens maker formula', 'optics', 'focal length', 'physics tutorial'],
