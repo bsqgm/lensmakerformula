@@ -3,18 +3,18 @@ import Navigation from '../components/Navigation';
 import FocalLengthContent from './FocalLengthContent';
 
 export const metadata: Metadata = {
-  title: 'Focal Length Calculator - Calculate Lens Focal Length [Free Tool]',
-  description: 'Free focal length calculator using the lens maker formula. Calculate focal length of convex and concave lenses instantly. Enter refractive index (n), R₁, and R₂ to find focal length in seconds.',
-  keywords: 'focal length calculator, calculate focal length, lens focal length calculator, focal length calculation, how to find focal length, focal length formula, lens calculator, optics calculator',
+  title: 'Focal Length Calculator — Free Online Tool | Formula & How to Calculate',
+  description: 'Free focal length calculator: get lens focal length instantly. Uses the focal length formula 1/f = (n-1)(1/R₁−1/R₂). For convex, concave & thick lenses. No signup.',
+  keywords: 'focal length calculator, calculate focal length, focal length formula, lens focal length calculator, how to calculate focal length, lens maker formula, optics calculator',
   openGraph: {
-    title: 'Focal Length Calculator - Calculate Lens Focal Length Free',
-    description: 'Calculate focal length instantly using the lens maker formula. Free online tool for students and engineers.',
+    title: 'Focal Length Calculator — Free Tool | Formula & How to Calculate',
+    description: 'Free focal length calculator: instant results for convex and concave lenses. Uses the lens maker formula. No signup.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Focal Length Calculator - Free Tool',
-    description: 'Calculate focal length of any lens instantly with our free calculator',
+    title: 'Focal Length Calculator — Free Online Tool',
+    description: 'Calculate focal length instantly with the lens maker formula. Free for students and engineers.',
   },
   alternates: {
     canonical: 'https://lensmakerformula.vercel.app/focal-length',

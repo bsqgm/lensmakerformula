@@ -30,9 +30,9 @@ export default function RefractiveIndexContent() {
           </h1>
           <p className="text-xl text-optics-blue/80 leading-relaxed">
             Use our free online refractive index calculator to determine the refractive index of any lens material. 
-            This refractive index calculator uses the lens maker&apos;s equation to compute n from known focal length 
-            and surface radii. The perfect refractive index calculator for optical engineers, students, and researchers 
-            who need accurate material property calculations.
+            This calculator uses the <Link href="/lens-maker-formula" className="text-optics-cyan hover:underline">lens maker formula</Link> (lens maker&apos;s equation) to compute n from known focal length 
+            and surface radii. See also the <Link href="/focal-length-formula" className="text-optics-cyan hover:underline">focal length formula</Link> and our{' '}
+            <Link href="/thick-lens" className="text-optics-cyan hover:underline">thick lens calculator</Link> for lenses where thickness matters.
           </p>
           <a href="#calculator" className="flex w-fit items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
             Use Calculator Now ↓

@@ -71,6 +71,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Educational pages
     {
+      url: `${siteUrl}/lens-maker-formula`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
       url: `${siteUrl}/optics-lens-maker-formula`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -163,6 +169,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/power-of-lens-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${siteUrl}/f-number-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${siteUrl}/effective-focal-length-calculator`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,

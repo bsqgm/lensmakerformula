@@ -26,13 +26,14 @@ export default function FocalLengthContent() {
           className="mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-glow-strong mb-6">
-            Focal Length Calculator
+            Focal Length Calculator — Free Online Tool
           </h1>
           <p className="text-xl text-optics-blue/80 leading-relaxed">
-            Use our free online focal length calculator to instantly compute the focal length of any lens. 
-            This focal length calculator uses the lens maker&apos;s equation to determine focal length from 
-            refractive index and surface radii. Perfect for students, educators, and optical engineers 
-            who need a reliable focal length calculator for their work.
+            Use our free <strong>focal length calculator</strong> to instantly compute the focal length of any lens
+            using the <Link href="/focal-length-formula" className="text-optics-cyan hover:underline">focal length formula</Link> (lens maker&apos;s equation).
+            Learn <Link href="/how-to-calculate-focal-length" className="text-optics-cyan hover:underline">how to calculate focal length</Link> step-by-step,
+            or try our <Link href="/convex-lens-calculator" className="text-optics-cyan hover:underline">convex lens calculator</Link> and{' '}
+            <Link href="/thick-lens" className="text-optics-cyan hover:underline">thick lens calculator</Link> for more options.
           </p>
           <a href="#calculator" className="flex w-fit items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
             Use Calculator Now ↓
@@ -366,7 +367,7 @@ export default function FocalLengthContent() {
           </div>
         </motion.section>
 
-        {/* Related Calculators */}
+        {/* Related Calculators & Formula Pages */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -374,9 +375,36 @@ export default function FocalLengthContent() {
           className="mb-16"
         >
           <h2 className="text-2xl font-display font-bold text-glow mb-6">
-            Related Calculators
+            Focal Length Formula, How-To Guides & Related Calculators
           </h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/focal-length-formula">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">Focal Length Formula</h3>
+                <p className="text-optics-blue/70 text-sm">Complete guide to the focal length formula and lens maker equation.</p>
+              </motion.div>
+            </Link>
+            <Link href="/how-to-calculate-focal-length">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">How to Calculate Focal Length</h3>
+                <p className="text-optics-blue/70 text-sm">Step-by-step guide to calculate focal length of a lens.</p>
+              </motion.div>
+            </Link>
+            <Link href="/convex-lens-calculator">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-amber mb-2">Convex Lens Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Focal length for biconvex and plano-convex lenses.</p>
+              </motion.div>
+            </Link>
             <Link href="/refractive-index">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
@@ -391,7 +419,7 @@ export default function FocalLengthContent() {
                 whileHover={{ scale: 1.02 }}
                 className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full"
               >
-                <h3 className="font-semibold text-optics-amber mb-2">Radius R₁ Calculator</h3>
+                <h3 className="font-semibold text-optics-amber mb-2">Radius of Curvature Calculator (R₁)</h3>
                 <p className="text-optics-blue/70 text-sm">Calculate first surface radius of curvature.</p>
               </motion.div>
             </Link>
@@ -401,7 +429,7 @@ export default function FocalLengthContent() {
                 className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-purple/50 transition-all h-full"
               >
                 <h3 className="font-semibold text-optics-purple mb-2">Thick Lens Calculator</h3>
-                <p className="text-optics-blue/70 text-sm">Focal length calculator with thickness correction.</p>
+                <p className="text-optics-blue/70 text-sm">Focal length with thickness correction.</p>
               </motion.div>
             </Link>
           </div>

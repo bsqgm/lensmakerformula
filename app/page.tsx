@@ -114,6 +114,7 @@ const advancedTools = [
 ];
 
 const learningResources = [
+  { href: '/lens-maker-formula', title: 'Lens Maker Formula', description: 'Definition, equation, derivation & calculators', icon: '📏' },
   { href: '/optics-lens-maker-formula', title: 'Optics Formula', description: 'Complete optics lens maker formula guide', icon: '🔭' },
   { href: '/how-to-calculate-focal-length', title: 'How to Calculate', description: 'Step-by-step focal length calculation guide', icon: '🎯' },
   { href: '/lens-maker-formula-derivation', title: 'Formula Derivation', description: 'Mathematical proof of the lens maker formula', icon: '📝' },
