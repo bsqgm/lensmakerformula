@@ -79,6 +79,12 @@ const calculatorLinks = [
     icon: 'n',
   },
   {
+    href: '/radius-of-curvature-calculator',
+    title: 'Radius of Curvature',
+    description: 'Choose the right solver for R₁ or R₂',
+    icon: 'R',
+  },
+  {
     href: '/radius-r1',
     title: 'Calculate R₁',
     description: 'Calculate first surface radius from f, n, and R₂',
@@ -100,6 +106,12 @@ const lensTypeLinks = [
     icon: '🔍',
   },
   {
+    href: '/plano-convex-lens-calculator',
+    title: 'Plano-Convex Lens',
+    description: 'Calculate focal length for one flat and one curved surface',
+    icon: '◐',
+  },
+  {
     href: '/concave-lens-calculator',
     title: 'Concave Lens Calculator',
     description: 'Calculate focal length of diverging lenses (biconcave, plano-concave)',
@@ -109,6 +121,7 @@ const lensTypeLinks = [
 
 const advancedTools = [
   { href: '/thick-lens', title: 'Thick Lens', description: 'Calculate focal length with thickness correction', icon: '🔷' },
+  { href: '/thin-lens-vs-thick-lens', title: 'Thin vs Thick Lens', description: 'Compare when thickness correction matters', icon: '⚖️' },
   { href: '/lens-combination', title: 'Lens Combination', description: 'Combined focal length of multiple lenses', icon: '⚙️' },
   { href: '/magnification', title: 'Magnification', description: 'Image distance and magnification calculation', icon: '🔎' },
 ];
@@ -119,6 +132,7 @@ const learningResources = [
   { href: '/how-to-calculate-focal-length', title: 'How to Calculate', description: 'Step-by-step focal length calculation guide', icon: '🎯' },
   { href: '/lens-maker-formula-derivation', title: 'Formula Derivation', description: 'Mathematical proof of the lens maker formula', icon: '📝' },
   { href: '/focal-length-formula', title: 'Focal Length Formula', description: 'Complete guide to focal length formulas', icon: '📐' },
+  { href: '/radius-of-curvature-formula', title: 'Radius Formula', description: 'Solve R₁ or R₂ from the lens maker equation', icon: '🧮' },
   { href: '/tutorial', title: 'Tutorial', description: 'Step-by-step guide to the lens maker formula', icon: '📚' },
   { href: '/examples', title: 'Examples', description: 'Common lens types with calculations', icon: '🔬' },
   { href: '/glossary', title: 'Glossary', description: 'Definitions of optical terms', icon: '📖' },
@@ -186,7 +200,7 @@ export default function Home() {
             <h3 className="text-2xl font-display font-semibold text-center mt-12 mb-6 text-optics-blue/80 animate-fade-in-up">
               Calculators by Lens Type
             </h3>
-            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {lensTypeLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
                   <div className="bg-glass-strong rounded-xl p-6 border border-optics-cyan/30 
@@ -281,6 +295,8 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li><Link href="/focal-length" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Focal Length</Link></li>
                   <li><Link href="/refractive-index" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Refractive Index</Link></li>
+                  <li><Link href="/index-of-refraction-calculator" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Index of Refraction</Link></li>
+                  <li><Link href="/radius-of-curvature-calculator" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Radius of Curvature</Link></li>
                   <li><Link href="/radius-r1" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Radius R₁</Link></li>
                   <li><Link href="/radius-r2" className="text-optics-blue/70 hover:text-optics-cyan transition-colors">Radius R₂</Link></li>
                 </ul>
@@ -291,6 +307,7 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-optics-amber mb-4">Advanced</h3>
                 <ul className="space-y-2">
                   <li><Link href="/thick-lens" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Thick Lens</Link></li>
+                  <li><Link href="/thin-lens-vs-thick-lens" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Thin vs Thick Lens</Link></li>
                   <li><Link href="/lens-combination" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Lens Combination</Link></li>
                   <li><Link href="/magnification" className="text-optics-blue/70 hover:text-optics-amber transition-colors">Magnification</Link></li>
                 </ul>
@@ -302,6 +319,7 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li><Link href="/optics-lens-maker-formula" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Optics Formula</Link></li>
                   <li><Link href="/focal-length-formula" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Focal Length Formula</Link></li>
+                  <li><Link href="/radius-of-curvature-formula" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Radius Formula</Link></li>
                   <li><Link href="/tutorial" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Tutorial</Link></li>
                   <li><Link href="/examples" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Examples</Link></li>
                   <li><Link href="/glossary" className="text-optics-blue/70 hover:text-optics-purple transition-colors">Glossary</Link></li>

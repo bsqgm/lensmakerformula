@@ -31,7 +31,9 @@ export default function RefractiveIndexContent() {
           <p className="text-xl text-optics-blue/80 leading-relaxed">
             Use our free online refractive index calculator to determine the refractive index of any lens material. 
             This calculator uses the <Link href="/lens-maker-formula" className="text-optics-cyan hover:underline">lens maker formula</Link> (lens maker&apos;s equation) to compute n from known focal length 
-            and surface radii. See also the <Link href="/focal-length-formula" className="text-optics-cyan hover:underline">focal length formula</Link> and our{' '}
+            and surface radii. If your audience searches for the alternate wording, use our{' '}
+            <Link href="/index-of-refraction-calculator" className="text-optics-cyan hover:underline">index of refraction calculator</Link>.
+            See also the <Link href="/focal-length-formula" className="text-optics-cyan hover:underline">focal length formula</Link> and our{' '}
             <Link href="/thick-lens" className="text-optics-cyan hover:underline">thick lens calculator</Link> for lenses where thickness matters.
           </p>
           <a href="#calculator" className="flex w-fit items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
@@ -375,7 +377,16 @@ export default function RefractiveIndexContent() {
           <h2 className="text-2xl font-display font-bold text-glow mb-6">
             Related Calculators
           </h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/index-of-refraction-calculator">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">Index of Refraction Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Alternate wording for the same n calculation workflow.</p>
+              </motion.div>
+            </Link>
             <Link href="/focal-length">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
@@ -400,7 +411,7 @@ export default function RefractiveIndexContent() {
                 className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-purple/50 transition-all h-full"
               >
                 <h3 className="font-semibold text-optics-purple mb-2">Materials Database</h3>
-                <p className="text-optics-blue/70 text-sm">Reference refractive index values.</p>
+                <p className="text-optics-blue/70 text-sm">Reference refractive index and index of refraction values.</p>
               </motion.div>
             </Link>
           </div>

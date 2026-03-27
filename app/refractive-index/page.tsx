@@ -3,18 +3,18 @@ import Navigation from '../components/Navigation';
 import RefractiveIndexContent from './RefractiveIndexContent';
 
 export const metadata: Metadata = {
-  title: 'Refractive Index Calculator - Calculate n from Lens Parameters',
-  description: 'Free refractive index calculator to determine lens material properties. Use our refractive index calculator with focal length and radii to calculate n. Identify optical materials instantly.',
-  keywords: 'refractive index calculator, calculate refractive index, lens refractive index calculator, n calculator, optics calculator, material identification',
+  title: 'Refractive Index Calculator - Index of Refraction Calculator for Lenses',
+  description: 'Free refractive index calculator to determine lens material properties. Also covers index of refraction calculations from focal length and radii so you can identify optical materials quickly.',
+  keywords: 'refractive index calculator, index of refraction calculator, calculate refractive index, lens refractive index calculator, n calculator, optics calculator, material identification',
   openGraph: {
     title: 'Refractive Index Calculator - Free Online Tool',
-    description: 'Calculate lens refractive index instantly with our free refractive index calculator',
+    description: 'Calculate refractive index or index of refraction instantly from focal length and radii.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Refractive Index Calculator',
-    description: 'Free online refractive index calculator for lens calculations',
+    description: 'Free online refractive index and index of refraction calculator for lens calculations',
   },
   alternates: {
     canonical: 'https://lensmakerformula.vercel.app/refractive-index',

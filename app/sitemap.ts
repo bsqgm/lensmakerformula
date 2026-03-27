@@ -26,6 +26,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${siteUrl}/index-of-refraction-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.88,
+    },
+    {
+      url: `${siteUrl}/radius-of-curvature-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${siteUrl}/radius-r1`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -45,6 +57,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${siteUrl}/plano-convex-lens-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${siteUrl}/biconvex-lens-focal-length`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
       url: `${siteUrl}/concave-lens-calculator`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -53,6 +77,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Advanced calculator pages
     {
       url: `${siteUrl}/thick-lens`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${siteUrl}/thin-lens-vs-thick-lens`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,
@@ -87,6 +117,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.95,
+    },
+    {
+      url: `${siteUrl}/radius-of-curvature-formula`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.88,
     },
     {
       url: `${siteUrl}/how-to-calculate-focal-length`,

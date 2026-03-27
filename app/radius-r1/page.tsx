@@ -3,18 +3,18 @@ import Navigation from '../components/Navigation';
 import RadiusR1Content from './RadiusR1Content';
 
 export const metadata: Metadata = {
-  title: 'Radius of Curvature Calculator (R₁) - First Surface Calculator',
-  description: 'Free radius of curvature calculator to compute the first surface radius R₁. Use our radius of curvature calculator for lens design. Calculate R₁ from focal length, n, and R₂.',
-  keywords: 'radius of curvature calculator, calculate R1, first surface radius calculator, lens curvature calculator, lens design calculator',
+  title: 'Radius R1 Calculator - First Lens Surface Radius from Focal Length',
+  description: 'Free Radius R1 calculator for the first lens surface. Calculate R₁ from focal length, refractive index, and R₂, or use the broad radius of curvature calculator if you need to choose between surfaces.',
+  keywords: 'radius R1 calculator, calculate R1, first surface radius calculator, first lens surface radius, lens curvature calculator, lens design calculator',
   openGraph: {
-    title: 'Radius of Curvature Calculator (R₁) - Free Online Tool',
-    description: 'Calculate first surface radius of curvature with our free radius of curvature calculator',
+    title: 'Radius R1 Calculator - Free Online Tool',
+    description: 'Calculate the first lens surface radius from focal length, n, and R₂.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Radius of Curvature Calculator (R₁)',
-    description: 'Free online radius of curvature calculator for lens design',
+    title: 'Radius R1 Calculator',
+    description: 'Free online calculator for the first lens surface radius',
   },
   alternates: {
     canonical: 'https://lensmakerformula.vercel.app/radius-r1',

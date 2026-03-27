@@ -3,18 +3,18 @@ import LensCombinationContent from './LensCombinationContent';
 import Navigation from '../components/Navigation';
 
 export const metadata: Metadata = {
-  title: 'Lens Combination Calculator - Combined Focal Length',
-  description: 'Calculate the combined focal length of multiple lenses in contact or separated. Essential tool for designing compound optical systems like telescopes and microscopes.',
+  title: 'Lens Combination Calculator - Combined Focal Length of Two Lenses',
+  description: 'Use this lens combination calculator to calculate the combined focal length of two lenses in contact or separated. Essential for compound optical systems like telescopes and microscopes.',
   keywords: 'lens combination calculator, combined focal length, compound lens, multiple lenses, optical system design, lens separation, telescope design',
   openGraph: {
     title: 'Lens Combination Calculator - Combined Focal Length',
-    description: 'Calculate combined focal length of multiple lenses for compound optical system design.',
+    description: 'Calculate combined focal length of two lenses for compound optical system design.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lens Combination Calculator',
-    description: 'Calculate combined focal length of multiple lenses',
+    description: 'Calculate combined focal length of two lenses',
   },
   alternates: {
     canonical: 'https://lensmakerformula.vercel.app/lens-combination',

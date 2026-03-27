@@ -137,7 +137,7 @@ export default function LensCombinationContent() {
                 transition={{ delay: 0.4 }}
                 className="text-optics-blue/80 text-lg"
               >
-                Calculate the combined focal length of two lenses
+                Calculate the combined focal length of two lenses in contact or separated by distance
               </motion.p>
               <a href="#calculator" className="flex w-fit items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
                 Use Calculator Now ↓

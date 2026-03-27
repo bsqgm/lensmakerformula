@@ -148,7 +148,7 @@ export default function ThickLensContent() {
                 transition={{ delay: 0.4 }}
                 className="text-optics-blue/80 text-lg"
               >
-                Calculate focal length with lens thickness correction
+                Calculate focal length with lens thickness correction and compare against the thin lens approximation
               </motion.p>
               <a href="#calculator" className="flex w-fit items-center gap-2 mt-4 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
                 Use Calculator Now ↓
@@ -566,7 +566,12 @@ export default function ThickLensContent() {
             </Link>
             <Link href="/lens-combination">
               <motion.button whileHover={{ scale: 1.05 }} className="px-4 py-2 bg-optics-darker border border-optics-blue/50 text-optics-cyan rounded-lg">
-                Lens Combination
+                Lens Combination Calculator
+              </motion.button>
+            </Link>
+            <Link href="/thin-lens-vs-thick-lens">
+              <motion.button whileHover={{ scale: 1.05 }} className="px-4 py-2 bg-optics-darker border border-optics-blue/50 text-optics-cyan rounded-lg">
+                Thin Lens vs Thick Lens
               </motion.button>
             </Link>
             <Link href="/magnification">

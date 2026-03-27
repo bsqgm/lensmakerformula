@@ -93,6 +93,24 @@ export default function LensMakerFormulaHubContent() {
                 <p className="text-optics-blue/70 text-sm">Focal length formula and lens maker equation.</p>
               </motion.div>
             </Link>
+            <Link href="/radius-of-curvature-formula">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-5 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-amber mb-2">Radius of Curvature Formula</h3>
+                <p className="text-optics-blue/70 text-sm">Rearrange the equation to solve R₁ or R₂.</p>
+              </motion.div>
+            </Link>
+            <Link href="/thin-lens-vs-thick-lens">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-5 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">Thin Lens vs Thick Lens</h3>
+                <p className="text-optics-blue/70 text-sm">Compare the approximation against the thickness-corrected formula.</p>
+              </motion.div>
+            </Link>
           </div>
         </motion.section>
 
@@ -113,6 +131,18 @@ export default function LensMakerFormulaHubContent() {
               <motion.div whileHover={{ scale: 1.02 }} className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full">
                 <h3 className="font-semibold text-optics-cyan mb-2">Refractive Index Calculator</h3>
                 <p className="text-optics-blue/70 text-sm">Calculate n from f, R₁, and R₂.</p>
+              </motion.div>
+            </Link>
+            <Link href="/index-of-refraction-calculator">
+              <motion.div whileHover={{ scale: 1.02 }} className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full">
+                <h3 className="font-semibold text-optics-cyan mb-2">Index of Refraction Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Alternate phrasing for the same n workflow.</p>
+              </motion.div>
+            </Link>
+            <Link href="/radius-of-curvature-calculator">
+              <motion.div whileHover={{ scale: 1.02 }} className="bg-glass-strong rounded-xl p-4 border border-optics-amber/30 hover:border-optics-amber/50 transition-all h-full">
+                <h3 className="font-semibold text-optics-amber mb-2">Radius of Curvature Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Choose the right workflow for R₁ or R₂.</p>
               </motion.div>
             </Link>
             <Link href="/radius-r1">
@@ -137,6 +167,18 @@ export default function LensMakerFormulaHubContent() {
               <motion.div whileHover={{ scale: 1.02 }} className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full">
                 <h3 className="font-semibold text-optics-cyan mb-2">Convex Lens Calculator</h3>
                 <p className="text-optics-blue/70 text-sm">Focal length for converging lenses.</p>
+              </motion.div>
+            </Link>
+            <Link href="/plano-convex-lens-calculator">
+              <motion.div whileHover={{ scale: 1.02 }} className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full">
+                <h3 className="font-semibold text-optics-amber mb-2">Plano-Convex Lens Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Focal length for one-flat-surface convex lenses.</p>
+              </motion.div>
+            </Link>
+            <Link href="/biconvex-lens-focal-length">
+              <motion.div whileHover={{ scale: 1.02 }} className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-purple/50 transition-all h-full">
+                <h3 className="font-semibold text-optics-purple mb-2">Biconvex Lens Focal Length</h3>
+                <p className="text-optics-blue/70 text-sm">Focused page for the symmetric convex case.</p>
               </motion.div>
             </Link>
           </div>

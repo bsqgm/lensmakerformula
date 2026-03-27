@@ -15,7 +15,7 @@ export default function RadiusR1Content() {
             <li>/</li>
             <li><Link href="/#tools" className="hover:text-optics-cyan transition-colors">Calculators</Link></li>
             <li>/</li>
-            <li className="text-optics-cyan">Radius of Curvature Calculator (R₁)</li>
+            <li className="text-optics-cyan">Radius R₁ Calculator</li>
           </ol>
         </nav>
 
@@ -26,13 +26,13 @@ export default function RadiusR1Content() {
           className="mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-display font-bold text-glow-strong mb-6">
-            Radius of Curvature Calculator (R₁)
+            Radius R₁ Calculator
           </h1>
           <p className="text-xl text-optics-blue/80 leading-relaxed">
-            Use our free radius of curvature calculator to determine the first surface radius (R₁) of any lens. 
-            This radius of curvature calculator uses the rearranged lens maker&apos;s equation to compute R₁ 
-            from known focal length, refractive index, and second surface radius. The essential radius of 
-            curvature calculator for lens design and optical engineering.
+            Use this dedicated <strong>R₁ calculator</strong> to determine the first surface radius of any lens.
+            It uses the rearranged lens maker&apos;s equation to compute R₁ from focal length, refractive index,
+            and second surface radius. If you need the broader choice between first and second surfaces, start with the{' '}
+            <Link href="/radius-of-curvature-calculator" className="text-optics-cyan hover:underline">radius of curvature calculator</Link>.
           </p>
           <a href="#calculator" className="flex w-fit items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-optics-blue to-optics-cyan text-optics-darker font-bold rounded-lg hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] transition-all">
             Use Calculator Now ↓
@@ -48,12 +48,12 @@ export default function RadiusR1Content() {
         >
           <h2 className="text-xl font-semibold text-optics-cyan mb-4">Table of Contents</h2>
           <ol className="space-y-2 text-optics-blue/80">
-            <li><a href="#calculator" className="hover:text-optics-cyan transition-colors">1. Radius of Curvature Calculator Tool</a></li>
+            <li><a href="#calculator" className="hover:text-optics-cyan transition-colors">1. R₁ Calculator Tool</a></li>
             <li><a href="#what-is" className="hover:text-optics-cyan transition-colors">2. What is Radius of Curvature?</a></li>
             <li><a href="#formula" className="hover:text-optics-cyan transition-colors">3. The R₁ Formula</a></li>
-            <li><a href="#how-to-use" className="hover:text-optics-cyan transition-colors">4. How to Use the Radius of Curvature Calculator</a></li>
+            <li><a href="#how-to-use" className="hover:text-optics-cyan transition-colors">4. How to Use the R₁ Calculator</a></li>
             <li><a href="#sign-convention" className="hover:text-optics-cyan transition-colors">5. Sign Convention</a></li>
-            <li><a href="#examples" className="hover:text-optics-cyan transition-colors">6. Radius of Curvature Calculator Examples</a></li>
+            <li><a href="#examples" className="hover:text-optics-cyan transition-colors">6. R₁ Calculator Examples</a></li>
             <li><a href="#applications" className="hover:text-optics-cyan transition-colors">7. Applications</a></li>
             <li><a href="#faq" className="hover:text-optics-cyan transition-colors">8. FAQ</a></li>
           </ol>
@@ -68,16 +68,16 @@ export default function RadiusR1Content() {
           className="mb-16"
         >
           <h2 className="text-3xl font-display font-bold text-glow mb-6">
-            1. Radius of Curvature Calculator Tool
+            1. R₁ Calculator Tool
           </h2>
           <p className="text-optics-blue/80 leading-relaxed mb-6">
-            Our radius of curvature calculator instantly computes R₁ from your lens parameters. 
-            Enter the focal length, refractive index, and R₂, and the radius of curvature calculator 
-            will determine the required first surface radius for your lens design.
+            Our R₁ calculator instantly computes the first surface radius from your lens parameters. 
+            Enter focal length, refractive index, and R₂, and the tool will determine the required
+            first surface radius for your lens design.
           </p>
           <UniversalCalculator
             mode="R1"
-            title="Radius of Curvature Calculator (R₁)"
+            title="Radius R₁ Calculator"
             description="Enter focal length (f), refractive index (n), and R₂ to calculate R₁"
           />
         </motion.section>
@@ -374,7 +374,16 @@ export default function RadiusR1Content() {
           <h2 className="text-2xl font-display font-bold text-glow mb-6">
             Related Calculators
           </h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/radius-of-curvature-calculator">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">Radius of Curvature Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Broad page for choosing between R₁ and R₂ workflows.</p>
+              </motion.div>
+            </Link>
             <Link href="/radius-r2">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
@@ -400,6 +409,15 @@ export default function RadiusR1Content() {
               >
                 <h3 className="font-semibold text-optics-purple mb-2">Refractive Index Calculator</h3>
                 <p className="text-optics-blue/70 text-sm">Calculate n from lens parameters.</p>
+              </motion.div>
+            </Link>
+            <Link href="/radius-of-curvature-formula">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-amber mb-2">Radius of Curvature Formula</h3>
+                <p className="text-optics-blue/70 text-sm">See the rearranged equations behind the R₁ calculation.</p>
               </motion.div>
             </Link>
           </div>

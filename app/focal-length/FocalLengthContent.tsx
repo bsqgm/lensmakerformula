@@ -375,7 +375,7 @@ export default function FocalLengthContent() {
           className="mb-16"
         >
           <h2 className="text-2xl font-display font-bold text-glow mb-6">
-            Focal Length Formula, How-To Guides & Related Calculators
+            Focal Length Guides, Lens Types & Related Calculators
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link href="/focal-length-formula">
@@ -414,13 +414,13 @@ export default function FocalLengthContent() {
                 <p className="text-optics-blue/70 text-sm">Calculate n from focal length and radii.</p>
               </motion.div>
             </Link>
-            <Link href="/radius-r1">
+            <Link href="/thin-lens-vs-thick-lens">
               <motion.div 
                 whileHover={{ scale: 1.02 }}
                 className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full"
               >
-                <h3 className="font-semibold text-optics-amber mb-2">Radius of Curvature Calculator (R₁)</h3>
-                <p className="text-optics-blue/70 text-sm">Calculate first surface radius of curvature.</p>
+                <h3 className="font-semibold text-optics-amber mb-2">Thin Lens vs Thick Lens</h3>
+                <p className="text-optics-blue/70 text-sm">See when thickness correction changes focal length enough to matter.</p>
               </motion.div>
             </Link>
             <Link href="/thick-lens">
@@ -430,6 +430,24 @@ export default function FocalLengthContent() {
               >
                 <h3 className="font-semibold text-optics-purple mb-2">Thick Lens Calculator</h3>
                 <p className="text-optics-blue/70 text-sm">Focal length with thickness correction.</p>
+              </motion.div>
+            </Link>
+            <Link href="/biconvex-lens-focal-length">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-cyan/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-cyan mb-2">Biconvex Lens Focal Length</h3>
+                <p className="text-optics-blue/70 text-sm">Focused guide for the classic two-convex-surface case.</p>
+              </motion.div>
+            </Link>
+            <Link href="/radius-of-curvature-calculator">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="bg-glass-strong rounded-xl p-4 border border-optics-blue/30 hover:border-optics-amber/50 transition-all h-full"
+              >
+                <h3 className="font-semibold text-optics-amber mb-2">Radius of Curvature Calculator</h3>
+                <p className="text-optics-blue/70 text-sm">Work backward from focal length to the missing surface radius.</p>
               </motion.div>
             </Link>
           </div>
