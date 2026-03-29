@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://lensmakerformula.vercel.app',
   },
+  verification: {
+    yandex: 'f6f4f655d986e6d1',
+    other: {
+      'msvalidate.01': 'A0A540FEDC984D4AAC3D27F33D15CBDF',
+    },
+  },
 }
 
 export const viewport: Viewport = {
